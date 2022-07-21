@@ -1,0 +1,340 @@
+/* CSS design */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(255, 255, 255, 0.014);
+}
+
+/* Header  */
+
+header{
+    width: 100%;
+    background-color: #2D25A0;
+    display: flex;
+    padding: 50px 0;
+}
+
+
+.half-width{
+    width: 50%;
+}
+
+.half-width img{
+    width: 556px;
+    height: 438px; 
+    margin-right: 120px; 
+}
+
+.header-title{
+    width: 485px;
+    height: 230px;
+    margin-left: 156px;
+    margin-top: 40px;
+}
+
+.header-title h1{
+    font-weight: bold;
+    font-size: 64px;
+    color: white;
+    margin: 0;
+    margin-bottom: 27px;
+}
+.header-title a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+}
+
+.fa-arrow-right{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.header-title a:hover{
+    padding: 20px 48px;
+    border-radius: 15px;
+    transition:  0.2s, padding 0.8s;
+}
+
+.header-title a:hover 
+{
+    transition: transform 0.8s;
+}
+
+
+/* Blogs Style */
+.container{
+    width: 1050px;
+    margin: 70px auto;
+}
+
+#blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+
+.blog{
+    width: 300px;
+    padding: 15px;
+    box-shadow: 10px 10px 20px lightgray;
+}
+
+.blog img{
+    width: 300px;
+    margin: 0;
+}
+
+.blog h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.blog p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    color: #6C6C6C;
+}
+
+
+
+
+.card-img img{
+    width: 270px;
+}
+
+
+
+
+/* Sports Updates */
+
+.update{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.breaking{
+    border-radius: 10px;
+}
+
+.Updates{
+    margin-bottom: 10px;
+}
+.Updates
+{
+    font-size: 28px;
+}
+
+
+/* Footer design*/
+
+footer
+{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-design
+{
+    background-color: #021220;
+    height: 350px;
+    color: aliceblue;
+}
+
+
+.icon-desogn{
+
+
+}
+
+small{
+    font-size: 18px;
+    font-weight: 400;
+ 
+}
+
+/* Media Queries design for Mobile */
+
+@media only screen and (max-width:688px) {
+
+    /* Header */
+    header
+    {
+        flex-direction: column;
+    }
+
+    .half-width,.header-title{
+        width: 92%;
+        margin: 0 4%;
+    }
+
+    .half-width img{
+        width: 100%;
+        margin: 0;
+    }
+
+    .header-title h1{
+        font-size: 36px;
+    }
+
+    /* Players profile blogs */
+    #blogs
+    {
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .blog
+    {
+        width: 95%;
+        padding: 10px 2.5%;
+        /* text-align: center; */
+    }
+
+    .blog img{
+        width: 100%;
+    }
+
+    /* results and  update */
+
+    .container{
+        width: 90%;
+        margin: 70px auto;
+    }
+
+    .results,.update{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .result{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Footer */
+
+    footer{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-design{
+        grid-template-columns: repeat(5,1fr);
+    }
+
+ 
+}
+
+
+/* Media Queries designed for Ipads */
+@media only screen and (min-width:689px) and (max-width: 992px) {
+
+    /* Header */
+    header{
+        align-items: center;
+    }
+    .header-title{
+        margin: 0 20px;
+        width: 40%;
+    }
+
+    .banner{
+        width: 60%;
+    }
+
+    .header-title h1{
+        font-size: 36px;
+    }
+
+    .half-width img{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Player profile blogs */
+    #blogs{
+        width: 92%;
+        grid-template-columns: repeat(2,1fr);
+        margin: 70px 4%;
+    }
+
+    /*update */
+    .container{
+        width: 90%;
+    }
+    
+    .update{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .results,.update, .footer-design{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    /* Footer section */
+
+    footer
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo img
+    {
+        width: 60%;
+    }
+
+}
+
+/* Media Queries designed for Ipad Pro */
+@media only screen and (min-width:993px) and (max-width: 1200px)
+{
+    /* Header */
+
+    .header-title
+    {
+        width: 40%;
+    }
+
+    .banner
+    {
+        width: 60%;
+    }
+
+    .header-title h1{
+        font-size: 36px;
+    }
+
+    .half-width img{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Player intro */
+    #blogs
+    {
+        width: 100%;
+    }
+
+    /*--------- updates-------*/
+    
+    .container{
+        width: 95%;
+    }
+    
+    .update{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
